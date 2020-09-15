@@ -1,7 +1,4 @@
 import UIKit
-
-
-
 //: # 1️⃣ السؤال الاول
 /*:
  #
@@ -16,13 +13,24 @@ import UIKit
  1.5) استعمل if statement , اذا كانت المصفوفة تحتوي على بيتزا قم بطباعه "yumm Pizza🍕😋"
 
 */
-
-
-
-
-
+var array = ["rice", "soup", "shrimp", "pasta"]
+array.append("pizza")
+print(array)
+print(array[0])
+for thing in array {
+print("\(thing)")
+}
+if array == ["pizza"] {
+    print("yumm Pizza")
+}
 //: # 2️⃣  السؤال الثاني
 var numbers = [1,2,3,4,5,6,7,8,9,10]
+var evenNumbers : [Int] = []
+for i in numbers {
+if i % 2 == 0 {
+    evenNumbers.append(i)
+}
+}
 /*:
 
 ##
@@ -56,4 +64,14 @@ var numbers = [1,2,3,4,5,6,7,8,9,10]
 
  
  */
-   
+
+for i in 1...5 {
+    for j in 1...10 {
+        print("\(i) * \(j) = \(i*j)", terminator: "   ")
+}
+    print("")
+}
+
+for x in 1...6 {
+    print("***************")
+}
